@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  /* height: 100%; */
+  width: 100%;
+  background: url('../phoneimage/WhatsApp\ Image\ 2024-06-16\ at\ 8.56.39\ PM.jpeg')
+ no-repeat center center fixed;
+ background-size: cover;
+
+}
+.container {
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+ label{
+    flex: 1;
+    margin-right: 10px;
+    font-weight: 600; 
+    color: rgb(41, 41, 237);
+    font-size: 20px;
+    font-weight: bold;
+} 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+textarea {
+    color: blue;
+    flex: 2;
+    padding: 8px;
+    font-size: 20px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+ textarea{
+    resize: vertical;
+ } 
+ input:focus,textarea:focus {
+    
+    border: 5px;
+ }
+ .radiogroup, 
+.checkboxgroup{
+    flex: 2;
+display: flex;
+justify-content: space-around;
+margin-left: 10px
+}
+.radiogroup input,
+ .checkboxgroup input{
+    margin-right: 5px;
+}
+.radiogroup label, 
+.checkboxgroup label{
+    margin-bottom: 5px;
+}
+input[type="submit"]{
+    width: 80px;
+    background-color: blue;
+    color: bisque;
+    align-content: center;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: cornflowerblue;
+}
